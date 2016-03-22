@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Simple Todo App</title>
+    <script src="https://jspm.io/system@0.19.js"></script>
+    <script>
+      System.config({
+        // transpiler: 'typescript',
+        // typescriptOptions: { emitDecoratorMetadata: true },
+        //packages: {'app': {defaultExtension: 'js'}}
+        transpiler: 'babel'
+      });
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      System.import('./app/main')
+    </script>
+  </body>
+</html>

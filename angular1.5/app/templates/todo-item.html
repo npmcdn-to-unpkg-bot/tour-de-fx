@@ -1,0 +1,7 @@
+<style>
+  .completed {
+    text-decoration: line-through;
+  }
+</style>
+<span ng-class="{ completed: $ctrl.todo.status === 'completed'}">{{$ctrl.todo.title}}</span>
+<button ng-click="$ctrl.todo.toggle()">Toggle Completed</button>
